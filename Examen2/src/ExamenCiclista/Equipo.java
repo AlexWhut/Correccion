@@ -15,18 +15,23 @@ public class Equipo {
         ciclistas.add(c);
     }
 
-    public void mostrarCiclistas(){
+    public String mostrarCiclistas(){
+        String s = "";
         for (Ciclista i : ciclistas){
-            System.out.println("Numero de ciclista: " + i.getNumero() + " - " + i.getNombre());
+            s += " \n " + "Numero de ciclista: " + i.getNumero() + " - " + i.getNombre() + i.toString();
+            
         }
+        return s;
     }
 
-    public void mostrarTiempoTotal(){
+    public String mostrarTiempoTotal(){
+        String s = " ";
         double tiempoTotal = 0;
         for (Ciclista c : ciclistas) {
             tiempoTotal += c.getTiempo();
         }
-        System.out.println("Tiempo total del equipo: " + tiempoTotal);
+        s += "Tiempo total del equipo: " + tiempoTotal;
+        return s;
     }
 
     @Override

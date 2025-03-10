@@ -17,11 +17,10 @@ public class Test {
         equipo1.addCiclista(whut);
 
         // Mostrar Ciclistas
-        equipo1.mostrarCiclistas();
+        System.out.println(equipo1.mostrarCiclistas());
 
         // obtener tiempos de todos los ciclistas del equipo
-        equipo1.mostrarTiempoTotal();
+        System.out.println(equipo1.mostrarTiempoTotal());
 
-    
     }
 }

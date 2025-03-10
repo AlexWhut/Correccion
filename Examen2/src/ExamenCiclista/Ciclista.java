@@ -3,8 +3,8 @@ package ExamenCiclista;
 public class Ciclista {
     private String nombre;
     private double tiempo;
-    private static int contadorID = 0; // Contador global
-    private int identificador; // ID único para cada ciclista
+    private static int contadorID = 1000; // Contador global
+    private int identificador; // ID para cada ciclista
 
     public Ciclista(String nombre, double tiempo) {
         this.nombre = nombre;
