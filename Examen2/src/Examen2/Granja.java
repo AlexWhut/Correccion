@@ -9,7 +9,7 @@ public class Granja {
     public Granja(String nombre, String ciudad) {
         this.nombre = nombre;
         this.ciudad = ciudad;
-        this.animales = new ArrayList<>();
+        this.animales = new ArrayList<Animal>();
     }
     
     public void agregarAnimal(Animal animal) {
@@ -51,5 +51,11 @@ public class Granja {
             System.out.println(animal);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Granja [nombre=" + nombre + ", ciudad=" + ciudad + ", animales=" + animales + "]";
+    }
+    
     
 }
